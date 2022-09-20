@@ -31,17 +31,20 @@
         <a class="nav-link disabled" href="?page=publicprofiles">Public Profiles</a>
       </li>
     </ul>
-      <div class="form-inline my-2 my-lg-0">
-      
-      
-      
-     
-           <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">
+      <div class="form-inline pull-xs-right">
+        <?php if ($_SESSION['id']) { ?>
+        
+<a class="btn btn-success-outline" href="?function=logout">Logout</a>
+
+  
+        
+<?php } else { ?>
+  
+<button  class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#exampleModal">
   Login/Signup
 </button>
 
-
+<?php } ?>
   
 
 

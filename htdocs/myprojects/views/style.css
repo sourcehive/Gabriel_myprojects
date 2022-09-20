@@ -4,6 +4,11 @@ html {
     position: relative;
     min-height: 100%;
   }
+
+  #loginAlert {
+    
+    display: none;      
+  }
   body {
     margin-bottom: 60px; /* Margin bottom by footer height */
   }
