@@ -9,14 +9,14 @@
 
       } else if (!$_POST['password']) {
 
-         $error = "A password is required";
+         $error = "A password is required.";
 
 
          } else if (filter_var($_POST['email'],
           FILTER_VALIDATE_EMAIL) === false) {
 
 
-         $error = "Please enter a valid email address,";
+         $error = "Please enter a valid email address.";
 
   }
    }
